@@ -16,5 +16,9 @@
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "graphql": "^16.1.0",
+    "graphql-request": "^3.7.0"
+  }
 }
