@@ -18,7 +18,14 @@
 	export let post;
 </script>
 
+<img class="mb-5" src={post.coverImage.url} alt={post.title} />
+<h1 class="text-3xl">{post.title}</h1>
+
+{#each post.tags as tag}
+	<span class="badge badge-primary">{tag}</span>
+{/each}
+
+<time>{post.date}</time>
 <article class="prose">
 	{@html post.content.html}
-	<img class="rounded" src={post.coverImage.url} alt={post.title} />
 </article>
