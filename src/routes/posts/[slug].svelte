@@ -25,7 +25,8 @@
 	<span class="badge badge-primary">{tag}</span>
 {/each}
 
-<time>{post.date}</time>
 <article class="prose">
 	{@html post.content.html}
 </article>
+
+<time>{post.date}</time>
