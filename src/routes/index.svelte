@@ -30,6 +30,5 @@
 				<a href={`/posts/${slug}`} class="btn">Read More</a>
 			</div>
 		</li>
-		>
 	{/each}
 </ul>
