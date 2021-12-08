@@ -17,17 +17,19 @@
 	export let posts;
 </script>
 
-{#each posts as { title, slug, date, excerpt, tags, coverImage }}
-	<li class="card text-center">
-		<figure>
-			<img class="rounded" src={coverImage.url} alt={coverImage.alt} />
-		</figure>
+<ul>
+	{#each posts as { title, slug, date, excerpt, tags, coverImage }}
+		<li class="card text-center">
+			<figure>
+				<img class="rounded" src={coverImage.url} alt={coverImage.alt} />
+			</figure>
 
-		<div class="card-body">
-			<p>{title}</p>
-			<p>{excerpt}</p>
-			<a href={`/posts/${slug}`} class="btn">Read More</a>
-		</div>
-	</li>
-	>
-{/each}
+			<div class="card-body">
+				<p>{title}</p>
+				<p>{excerpt}</p>
+				<a href={`/posts/${slug}`} class="btn">Read More</a>
+			</div>
+		</li>
+		>
+	{/each}
+</ul>
